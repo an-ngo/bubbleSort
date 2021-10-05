@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class BubbleSort {
     static int[] list = {2, 3, 2, 5, 6, 1, -2, 3, 14, 12};
 
@@ -18,9 +20,19 @@ public class BubbleSort {
     }
 
     public static void main(String[] args) {
+        int[] arr= new int[3];
+        Scanner scanner = new Scanner(System.in);
+        for (int i = 0; i < 3; i++) {
+            arr[i] = scanner.nextInt();
+        }
         bubbleSort(list);
         for (int i :
                 list) {
+            System.out.println(i);
+        }
+        bubbleSort(arr);
+        for (int i :
+                arr) {
             System.out.println(i);
         }
     }
